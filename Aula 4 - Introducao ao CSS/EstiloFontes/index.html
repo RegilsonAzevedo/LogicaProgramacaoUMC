@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte no HTML e CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        
+        h1{
+            font-family: "Comic Neue", serif;
+            font-weight: 700;
+            font-style: normal;
+            text-align: center;
+        }
+        
+        h2{
+            /*modificando o tipo da fonte */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            /* Modificando o tamanho da fonte*/
+            font-size: 30px;
+            /* Alinhando o texto*/
+            text-align: center;
+        }
+        p{
+            /*modificando o tipo da fonte */
+            font-family: 'Times New Roman', Times, serif;
+            /* Modificando o tamanho da fonte*/
+            font-size: 18px;
+            /* Alinhando o texto*/
+            text-align: justify;
+            /*Espaçamento emtre linhas*/
+            line-height: 25px;
+            /*Espaçamento entra caractere*/
+            letter-spacing: 1px;
+            /*Identação na primeira linha*/
+            text-indent: 50px;
+        }
+        span{
+            font-weight: bolder;
+            font-style:unset;
+            color: brown;
+        }
+        a{
+            text-decoration: none;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao nosso site!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Modificando o Estilo da Fonte</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nam repudiandae ut illum atque quis doloremque unde. Quia vitae voluptas fugiat sint possimus? At adipisci, fuga a tempore in dolores?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat animi voluptatibus explicabo aperiam labore accusamus quod rem ut eaque provident molestias, nam iste accusantium fugit amet, sed quasi minima quas?</p>
+            
+            <p>Lorem ipsum <span>dolor sit amet consectetur adipisicing elit.</span> Atque consequatur, iste magnam similique expedita repellat quo deserunt ab laborum quasi facilis necessitatibus non quis provident tempora animi eligendi praesentium explicabo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolores perspiciatis quae, mollitia sed inventore esse voluptates expedita sequi nesciunt assumenda ipsam eos aliquam sunt provident? Necessitatibus optio consequatur voluptatibus?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolorem error debitis, odit ex voluptas repellat omnis iste labore culpa aperiam quo ea dicta, facere perferendis eum vel perspiciatis molestias?<a href="">Clique aqui</a></p>
+        </section>
+    </main>
+</body>
+</html>
