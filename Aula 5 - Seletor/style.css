@@ -1,0 +1,47 @@
+h1{
+    font-size: 38px;
+    color: rgb(216, 196, 13);
+    background-color: rgb(107, 71, 165);
+    text-align: center;
+}
+h2{
+    font-size: 24px;
+    color: brown;
+    background-color: rgb(76, 173, 109);
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    color: rgb(194, 4, 77);
+    background-color:burlywood;
+    text-align: center;
+}
+
+#umc {
+    font-size: 40px;
+    color: rgb(36, 40, 41);
+    
+}
+#paragrafo{
+    font-size: 18px;
+    color: darkolivegreen;
+    background-color: burlywood;
+}
+#p2{
+    color: crimson;
+}
+#p3{
+    color: blueviolet;
+}
+#p4{
+    color: cornflowerblue;
+    }
+#p5{
+    color: darkcyan;
+}
+#p6{
+    color: darkorange;
+}
+#p7{
+    color: deeppink;
+}

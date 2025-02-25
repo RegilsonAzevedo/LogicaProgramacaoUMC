@@ -1,0 +1,28 @@
+body{
+    width: 60vw;
+    margin: auto;
+}
+h1{
+    background-color: cornflowerblue;
+    color: black;
+    text-align: center;
+}
+h2{
+    background-color: cornflowerblue;
+    color: rgb(106, 78, 117);
+    text-align: center;
+}
+p{
+background-color: rgb(127, 182, 90);
+color:rgb(60, 126, 146) ;
+text-align: center;
+}
+#subtitle1{
+    color: brown;
+}
+.paragrafo{
+    color: blueviolet;
+}
+.subtitle{
+    color: rgb(25, 64, 138);
+}

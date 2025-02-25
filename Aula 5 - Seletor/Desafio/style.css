@@ -1,0 +1,23 @@
+body{
+    width: 60vw;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+h1#titulo1{
+    background-color: rgb(195, 216, 147);
+    color: crimson;
+}
+h1#titulo2{
+    background-color: cadetblue;
+    color: rgb(118, 72, 161);
+}
+h2.subtitulo{
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(87, 131, 12);
+}
+p.paragrafo{
+    font
+}
