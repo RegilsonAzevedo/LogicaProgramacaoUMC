@@ -1,0 +1,19 @@
+h1{
+    color: rgb(11, 91, 102);
+}
+table{
+    width: 60vw;
+    border-collapse: collapse
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+th{
+    color: rgb(99, 23, 21);
+    background-color: rgb(209, 178, 37);
+}
+td{
+    background-color: rgb(194, 216, 199);
+}
