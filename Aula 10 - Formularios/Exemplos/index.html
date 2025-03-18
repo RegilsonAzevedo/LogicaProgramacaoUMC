@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo Formulário</h1>
+
+    <form action="">
+        
+        <p>
+            <label for="nome">Nome Completo: </label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </p>
+        
+        <p>
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+        </p>
+
+        <p>
+            <label for="number">Celular:</label>
+            <input type="number"  id="number" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="exemplo@exemplo.com" required autocomplete="on">
+        </p>
+
+
+        <p>
+
+            <label for="senha">Senha:</label>
+            <input type="password"  id="senha" required>
+
+        </p>
+
+        <p>
+            <label for="mensagem">Reclamação:</label > <br>
+            <textarea name="mensagem" id="mensagem"></textarea>
+        </p>
+
+        <p>
+
+            <label for="estados">Estados:</label> <br>
+            <select name="estados" id="estados">
+                <option value="Sp">São Paulo</option>
+                <option value="Rj">Rio de Janeiro</option>
+                <option value="Es">Espirito Santo</option>
+                <option value="Ac">Acre</option>
+                <option value="Rm">Roraima</option>
+                <option value="Rd">Rondônia</option>
+                <option value="Pr">Paraná</option>
+                <option value="Sc">Santa Catarina</option>
+                <option value="Am">Amazonas</option>
+                <option value="pa">Pará</option>
+                <option value="Rs">Rio Grande do Sul</option>
+                <option value="Rn">Rio Grande do Norte</option>
+                <option value="Pb">Paraíba</option>
+                <option value="Pe">Pernambuco</option>
+                <option value="Ce">Ceara</option>
+                <option value="Ba">Bahia</option>
+                <option value="Se">Sergipe</option>
+                <option value="Mt">Mato Grosso</option>
+                <option value="Ms">Mato Grosso do Sul</option>
+                <option value="Go">Goiás</option>
+                <option value="Mg">Minas Gerais</option>
+                <option value="Ma">Maranhão</option>
+                <option value="To">Tocantin</option>
+                <option value="Al">Alagoas</option>
+                <option value="Ap">Amapá</option>
+                <option value="Df">Distrito Federal</option>
+            </select>
+        </p>
+
+        <p>
+
+            <label for="esportes">Esportes Favoritos:</label> <br>
+            <input type="checkbox" name="esportes" value="futebol">Futebol <br>
+            <input type="checkbox" name="esportes" value="basquete">Basquete <br>
+            <input type="checkbox" name="esportes" value="natacao">Natação <br>
+            <input type="checkbox" name="esportes" value="volei">Vôlei <br>
+
+        </p>
+
+        <p>
+
+            <label>Cursos</label> <br>
+            <input type="radio" name="" value="ADS">ADS <br>
+            <input type="radio" name="" value="Engenharia de Software">Engenharia de Software <br>
+            <input type="radio" name="" value="Ciencia da Computacao">Ciência da Computação <br>
+            <input type="radio" name="" value="sistema da informacao">Sistema da Informação <br>
+
+        </p>
+
+        <p>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+
+        </p>
+
+    </form>
+</body>
+</html>
