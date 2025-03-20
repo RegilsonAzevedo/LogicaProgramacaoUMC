@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: rgb(196, 201, 191);
+    
+}
+.container-cabecalho {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    width: 40vw;
+    height: 30px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+main{
+    max-width: 60vw;
+    height: 80vh;
+    margin: 30px auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.card {
+    border: 0.5px solid black; 
+    box-shadow: 1px 1px 1px rgb(36, 35, 35);   
+    border-radius: 5px;
+    background-color: white;
+    height: 360px;
+    width: 250px;
+}
+
+.img-card {
+    text-align: center;
+    margin: 30px;
+}
+
+.img-card > img {
+    width: 100%;
+    height: auto;
+}
+.descricao-card {
+    font-weight: bold;
+    margin: 10px;
+}
+.categoria-card {
+    font-size: small;
+    margin: 10px;
+}
+.valor-card{
+    margin: 10px;
+    
+}
+.frete-card{
+    color: green;
+    font-weight: bold;
+    margin: 10px;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    border: 1px solid black;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    padding: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-evenly;
+}
+.itens {
+    padding: 50px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
