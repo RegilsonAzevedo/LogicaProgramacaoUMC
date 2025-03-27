@@ -26,7 +26,7 @@ console.log('O restante da operação é',modulo)
 
 // Operador de potencia
 let potencia = Math.pow(n1,n2)
-console.log(potencia)
+console.log('A resultado da potência é',potencia)
 
 // operador raiz quadrada
 let raiz_quadrada = Math.sqrt(n1)
