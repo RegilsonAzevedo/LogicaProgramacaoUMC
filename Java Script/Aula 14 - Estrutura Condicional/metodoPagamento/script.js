@@ -13,24 +13,30 @@ function calcularPagamento() {
     // Débito - 5% desconto
     // Crétido - sem desconto
 
-    let formaPagamento = 'debito'
-    let valorTotal = 100
+    let formaPagamento = document.querySelector('#formaPagamento').value
+    let valorTotal = parseFloat(document.querySelector('#valorCompra').value)
+    let resultado = document.querySelector('#resultado')
     let valorFinal
-    switch (formaPagamento) {
-        case 'pix':
-            valorFinal = valorTotal * 0.9
-            console.log(valorFinal);
-            break
-        case 'debito':
-            valorFinal = valorTotal * 0.95
-            console.log(valorFinal);
-            break
-        case 'credito':
-            console.log(valorFinal)
-            break
-        default:
-            console.log('Informe uma forma de pagamento válida!')
-            break
 
+    if (valorTotal<= 0 || isNaN(valorTotal)) {
+        resultado.innerHTML = 'Por favor insira um número válido'
+    }
+    else {
+        switch (formaPagamento) {
+            case 'pix':
+                valorFinal = valorTotal * 0.9
+                resultado.innerHTML = ` Valor final é R$ ${valorFinal.toFixed(2)}`;
+                break
+            case 'debito':
+                valorFinal = valorTotal * 0.95
+                resultado.innerHTML = ` Valor final é R$ ${valorFinal.toFixed(2)}`;
+                break
+            case 'credito':
+                resultado.innerHTML = ` Valor final é R$ ${valorTotal.toFixed(2)}`;
+                break
+            default:
+                resultado.innerHTML = 'Informe uma forma de pagameto válida'
+                break
+    }
     }
 }
