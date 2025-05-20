@@ -56,14 +56,46 @@
                         // echo var_dump($resultado);
 
                         if($resultado->num_rows > 0){
-                            echo" USUÁRIO EXISTE ";
+                        
                             // Armazenar as informações vinda do DB
                             $row =$resultado->fetch_assoc();
-                            echo var_dump($row);
-                        }
+                            echo "<table>
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Nome</th>
+                                            <th>Sobrenome</th>
+                                            <th>E-mail</th>
+                                            <th>Excluir</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <td>{$row['ID']}</td>
+                                        <td>{$row['NOME']}</td>
+                                        <td>{$row['SOBRENOME']}</td>
+                                        <td>{$row['EMAIL']}</td>
+                                        <td>
+                                            <form action='excluirCadastro.php' method='post'>
+                                                <input type='hidden' name='id' value='{$row['ID']}'>
+                                                <input type='submit' id='btn-excluir' value='Excluir'>
+                                            </form>
+
+                                        </td>
+                                    </tbody>
+                                </table>";
+                            }
                         else {
-                            echo" USUÁRIO INEXISTENTE ";
+                            echo" <div class='mensagem erro'> E-mail $email não encontrado </div>";
                         }
+
+                        // Encerrar consulta sql
+                        $stmt->close();
+                    } else{
+                        echo" <div class='mensagem erro'> Erro na consulta </div>";
+
+                        // Encerrar a conexão com o banco de dados
+                        $conn->close();
+                        
                     }
 
                 }
