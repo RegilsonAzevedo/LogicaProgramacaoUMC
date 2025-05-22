@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../estilos/styleVerificar.css">
 </head>
 <body>
-<header>
+    <header>
         <nav>
             <ul>
                 <li><a href="../index.php">Início</a></li>
